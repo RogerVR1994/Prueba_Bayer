@@ -19,6 +19,9 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/favicon.png">
+    <script type="text/javascript" src="../bootstrap/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/moment-with-locales.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap-datetimepicker.js"></script>
   </head>
 
   <body>
@@ -167,7 +170,7 @@
     <main class="main-container">
       <header class="header" style="margin-bottom:0px;">
         <div class="header-bar">
-          <h2>Consulta</h2>
+          <h2>Ingreso</h2>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Consulta</a></li>
             <li class="breadcrumb-item"><a href="#">Por Tag</a></li>
@@ -325,7 +328,25 @@
                           <textarea class="form-control" id="textarea" rows="6"></textarea>
                         </div>
                       </div>
-    
+    					
+
+    					<div class="col-md-4">
+	            <div class="form-group">
+	                <div class='input-group date' id='datetimepicker1'>
+	                    <input id="fecha" type='text' class="form-control" />
+	                    <span class="input-group-addon">
+	                        <span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+	        <script type="text/javascript">
+		    
+	            $(function () {
+	            	$('#datetimepicker1').datetimepicker();
+	            });
+	        </script>
+	    	</div>
     
     
                     </div>
