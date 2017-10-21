@@ -191,15 +191,15 @@
                           		<input type="text" class="form-control" id="input-required" name="fecha">
                         	</div>
                       	</div>
+
+                        <div class="col-md-4">
+                          
     
-    					<div class="col-md-4">
-                        	
-    
-                        	<div class="form-group">
-                          		<label class="require" for="input-required">Proveniente de:</label>
-                          		<input type="text" class="form-control" id="input-required" name="fecha" name="lugar">
-                        	</div>
-                      	</div>
+                          <div class="form-group">
+                              <label class="require" for="input-required">Días de tratamiento</label>
+                              <input type="text" class="form-control" id="input-required" name="dias">
+                          </div>
+                        </div>
 
                       	<div class="col-md-4">
                         	
@@ -210,14 +210,7 @@
                         	</div>
                       	</div>
     
-						<div class="col-md-4">
-                        	<hr>
-    
-                        	<div class="form-group">
-                          		<label class="require" for="input-required">Peso</label>
-                          		<input type="text" class="form-control" id="input-required" name="peso">
-                        	</div>
-                      	</div>
+						            
 
                       	<div class="col-md-4">
                         	<hr>
@@ -237,6 +230,15 @@
                         	</div>
                       	</div>
 
+                        <div class="col-md-4">
+                          <hr>
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Peso</label>
+                              <input type="text" class="form-control" id="input-required" name="peso">
+                          </div>
+                        </div>
+
                       	<div class="col-md-4">
                         	<hr>
     
@@ -246,66 +248,66 @@
                         	</div>
                       	</div>
 
-                      	<div class="col-md-8">
-                        	<hr>
     
-     	                    <div class="form-group">
-        	                  <label for="textarea">Comentarios</label>
-            	              <textarea class="form-control" id="textarea" rows="6"></textarea>
-                	        </div>
-                    	</div>
-
-                      	<div class="col-md-4">
-                      		<hr>
-                      		<label class="require" for="input-required">Sexo</label>
-                      		<div class="form-check">
-                      			<label class="form-check-label">
-                      				<input type="radio" class="form-check-input" name="sexo" value="macho" checked>"Macho"				
-                      			</label>
-                      		</div>	
-                      		<div class="form-check">
-                      			<label class="form-check-label">
-                      				<input type="radio" class="form-check-input" name="sexo" value="hembra" >"Hembra"				
-                      			</label>
-                      		</div>
-                      	</div>
-
-                      	<div class="col-md-4">
-                      		<hr>
-                      		<label class="require" for="input-required">Riesgo</label>
-                      		<div class="form-check">
-                      			<label class="form-check-label">
-                      				<input type="radio" class="form-check-input" name="riesgo" value="bajo" checked>"Bajo"				
-                      			</label>
-                      		</div>	
-                      		<div class="form-check">
-                      			<label class="form-check-label">
-                      				<input type="radio" class="form-check-input" name="riesgo" value="alto" >"Alto"				
-                      			</label>
-            	          		</div>
-                      	</div>
-
-               			<div class="col-md-4">
-                      		<hr>
-                      		<label class="require" for="input-required">Enfermería</label>
-                      		<div class="form-check">
-                      			<label class="form-check-label">
-                      				<input type="radio" class="form-check-input" name="enfermeria" value="no" checked>"No"				
-                      			</label>
-                      		</div>	
-                      		<div class="form-check">
-                      			<label class="form-check-label">
-                      				<input type="radio" class="form-check-input" name="enfermeria" value="si" >"Si"				
-                      			</label>
-                      		</div>
-                      	</div>
+                      
+                      <div class="col-md-4">
+                <hr>
+                <label class="require" for="input-required">Padecimiento</label>
+                <div class="form-group">
+                  
+                  <div class="btn-group bootstrap-select show-tick">
+                    <button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="button" title="Nothing selected" aria-expanded="false">
+                      <span class="filter-option pull-left">Nada Seleccionado</span>&nbsp;
+                      <span class="bs-caret">
+                        <span class="caret"></span>
+                      </span>
+                    </button>
+                    <div class="dropdown-menu open" role="combobox" style="max-height: 431px; overflow: hidden; min-height: 38px; position: absolute; top: 36px; left: 0px; will-change: top, left;" x-placement="bottom-start">
+                      <div class="bs-actionsbox">
+                        <div class="btn-group btn-group-sm btn-block">
+                          <button type="button" class="actions-btn bs-select-all btn btn-default btn-secondary">Select All</button>
+                          <button type="button" class="actions-btn bs-deselect-all btn btn-default btn-secondary">Deselect All</button>
+                        </div>
+                      </div>
+                      <div class="dropdown-menu inner" role="listbox" aria-expanded="false" style="max-height: 391px; overflow-y: auto; min-height: 0px;">
+                        <a class="dropdown-item" data-original-index="0">
+                          <span tabindex="0" class="dropdown-item-inner " data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                            <span class="text">Mustard</span>
+                            <span class=" ti-check check-mark"></span>
+                          </span>
+                        </a>
+                        <a class="dropdown-item" data-original-index="1">
+                          <span tabindex="0" class="dropdown-item-inner " data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                            <span class="text">Ketchup</span>
+                            <span class=" ti-check check-mark"></span>
+                          </span>
+                        </a>
+                        <a class="dropdown-item" data-original-index="2">
+                          <span tabindex="0" class="dropdown-item-inner " data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                            <span class="text">Relish</span>
+                            <span class=" ti-check check-mark"></span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <select data-provide="selectpicker" multiple="" data-actions-box="true" class="" tabindex="-98">
+                    <option>Garraptas</option>
+                    <option>Digestivo</option>
+                    <option>Moquillo</option>
+                    <option>Locomotor</option>
+                    <option>Nervioso</option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+     	    
 						
-						<div class="col-md-12">
-							<hr>
-							<div class="file-group">
-								<button class="btn btn-block btn-primary file-browser" type="button">Enviar</button>
-							</div>
-						</div>
+          						<div class="col-md-12">
+          							<hr>
+          							<div class="file-group">
+          								<button class="btn btn-block btn-primary file-browser" type="button">Actializar Expediente</button>
+          							</div>
+          						</div>
                       	
     
                     </div>
