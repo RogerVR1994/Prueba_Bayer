@@ -166,11 +166,11 @@
 
 
 
-    <!-- Main container -->
+   <!-- Main container -->
     <main class="main-container">
       <header class="header" style="margin-bottom:0px;">
         <div class="header-bar">
-          <h2>Consulta</h2>
+          <h2>Ingreso</h2>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Consulta</a></li>
             <li class="breadcrumb-item"><a href="#">Por Tag</a></li>
@@ -180,156 +180,138 @@
 
       <div class="main-content">
           <div class="card">
-              <h3 class="card-title"><strong>Ingreso de Vacas</strong></h4>
+ 
 
                 <div class="card-body">
                     <div class="row">
     
     
                       <div class="col-md-4">
-                        <div class="form-group">
-                          <label for="input-normal">Normal input</label>
-                          <input type="text" class="form-control" id="input-normal" value="Input value">
+                          
+   
+                          <div class="form-group">
+                              <label class="require" for="input-required">Fecha de Ingreso</label>
+                              <input type="text" class="form-control" id="input-required" name="fecha">
+                          </div>
                         </div>
+    
+              <div class="col-md-4">
+                          
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Proveniente de:</label>
+                              <input type="text" class="form-control" id="input-required" name="fecha" name="lugar">
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Tag ID</label>
+                              <input type="text" class="form-control" id="input-required" name="id">
+                          </div>
+                        </div>
+    
+            <div class="col-md-4">
+                          <hr>
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Peso</label>
+                              <input type="text" class="form-control" id="input-required" name="peso">
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <hr>
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Corral</label>
+                              <input type="text" class="form-control" id="input-required" name="corral">
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <hr>
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Lote</label>
+                              <input type="text" class="form-control" id="input-required" name="lote">
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <hr>
+    
+                          <div class="form-group">
+                              <label class="require" for="input-required">Temperatura</label>
+                              <input type="text" class="form-control" id="input-required" name="temperatura">
+                          </div>
+                        </div>
+
+                        
+
+                        <div class="col-md-3">
+                          <hr>
+                          <label class="require" for="input-required">Sexo</label>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="sexo" value="macho" checked>"Macho"        
+                            </label>
+                          </div>  
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="sexo" value="hembra" >"Hembra"       
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <hr>
+                          <label class="require" for="input-required">Riesgo</label>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="riesgo" value="bajo" checked>"Bajo"        
+                            </label>
+                          </div>  
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="riesgo" value="alto" >"Alto"       
+                            </label>
+                            </div>
+                        </div>
+
+                    <div class="col-md-3">
+                          <hr>
+                          <label class="require" for="input-required">Enfermería</label>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="enfermeria" value="no" checked>"No"        
+                            </label>
+                          </div>  
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="enfermeria" value="si" >"Si"       
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <hr>
+    
+                          <div class="form-group">
+                            <label for="textarea">Comentarios</label>
+                            <textarea class="form-control" id="textarea" rows="6"></textarea>
+                          </div>
                       </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr class="d-md-none">
-    
-                        <div class="form-group">
-                          <label>Readonly input</label>
-                          <input type="text" class="form-control" value="Input value" readonly="">
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr class="d-md-none">
-    
-                        <div class="form-group">
-                          <label>Disabled input</label>
-                          <input type="text" class="form-control" value="Input value" disabled="">
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label for="input-placeholder">Placeholder</label>
-                          <input type="text" class="form-control" placeholder="Placeholder text" id="input-placeholder">
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label class="require" for="input-required">Required</label>
-                          <input type="text" class="form-control" id="input-required">
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label>Static</label>
-                          <p class="form-control-plaintext">email@example.com</p>
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label for="input-help-text">Help text</label>
-                          <input type="text" class="form-control" id="input-help-text" placeholder="Enter email">
-                          <small class="form-text">We'll never share your email with anyone else.</small>
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group has-form-text">
-                          <label for="input-help-hover">Help text on hover</label>
-                          <input type="text" class="form-control" id="input-help-hover" placeholder="Enter email">
-                          <small class="form-text">We'll never share your email with anyone else.</small>
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label for="input-help-inline">Inline help text</label>
-                          <small>Required</small>
-                          <input type="text" class="form-control" id="input-help-inline" placeholder="Enter email">
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <label>Sizes</label>
-                        <div class="form-group">
-                          <input type="text" class="form-control form-control-sm" placeholder="Small">
-                        </div>
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Normal">
-                        </div>
-                        <div class="form-group">
-                          <input type="text" class="form-control form-control-lg" placeholder="Large">
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label for="select">Example select</label>
-                          <select class="form-control" id="select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-    
-                        <div class="form-group">
-                          <label for="select-multi">Example multiple select</label>
-                          <select class="form-control" id="select-multi" multiple="">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                      </div>
-    
-    
-                      <div class="col-md-4">
-                        <hr>
-    
-                        <div class="form-group">
-                          <label for="textarea">Example textarea</label>
-                          <textarea class="form-control" id="textarea" rows="6"></textarea>
-                        </div>
-                      </div>
-    
-    
+            
+            <div class="col-md-12">
+              <hr>
+              <div class="file-group">
+                <button class="btn btn-block btn-primary file-browser" type="button">Enviar</button>
+              </div>
+            </div>
+                        
     
                     </div>
                   </div>
