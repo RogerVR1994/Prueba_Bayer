@@ -178,7 +178,7 @@
           <div class="card">
 
               <div class="card-body">
-                <table class="table col-md-12" data-provide="datatables" id="table-cows">
+                <table class="table table-responsive col-md-12" data-provide="datatables" id="table-cows">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -201,15 +201,129 @@
                       <td>700kg</td>
                       <td>Si</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
+
+                        <div class="modal modal-center fade" id="modal-center" tabindex="-1" style="display: none;" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Enviar a Enfermería</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form >
+                                <div class="col-md-10">
+                                  
+            
+                                  <div class="form-group">
+                                      <label class="require" for="input-required">Peso</label>
+                                      <input type="text" class="form-control" id="input-required" name="peso">
+                                  </div>
+                                </div>
+
+                                <div class="col-md-10">
+                                  
+            
+                                  <div class="form-group">
+                                      <label class="require" for="input-required">Temperatura</label>
+                                      <input type="text" class="form-control" id="input-required" name="temperatura">
+                                  </div>
+                                </div>
+
+                                <div class="col-md-10">
+                                  <label class="require" for="input-required">Padecimiento</label>
+                                  <div class="form-group">
+                                    
+                                    <div class="btn-group bootstrap-select show-tick">
+                                      <select data-provide="selectpicker" multiple="" data-actions-box="true" class="" tabindex="-98" title="Nada Seleccionado">
+                                        <option>Garraptas</option>
+                                        <option>Digestivo</option>
+                                        <option>Moquillo</option>
+                                        <option>Locomotor</option>
+                                        <option>Nervioso</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-md-10">
+                                  <label class="require" for="input-required">Medicamento</label>
+                                  <div class="form-group">
+                                    
+                                    <div class="btn-group bootstrap-select show-tick">
+                                      <select data-provide="selectpicker" multiple="" data-actions-box="true" class="" tabindex="-98" title="Nada Seleccionado">
+                                        <option>Fluxabac LA 1/10</option>
+                                        <option>Tetraback LA 1/10</option>
+                                        <option>Baytril Max LA 1/13.5</option>
+                                        <option>Fluxavet 2/45</option>
+                                        <option>Dipirona 4x50</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-md-10">
+                                  <label class="require" for="input-required">Tratamiento</label>
+                                  <div class="form-group">
+                                    
+                                    <div class="btn-group bootstrap-select show-tick">
+                                      <select data-provide="selectpicker"  data-actions-box="true" class="" tabindex="-98" title="Nada Seleccionado">
+                                        <option>Primero</option>
+                                        <option>Segudo</option>
+                                        <option>Tercero</option>
+                                        <option>Cuarto</option>
+                                        <option>Quinto</option>
+                                        <option>Sexto</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <br>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="reset" class="btn btn-bold btn-secondary">Cancelar</button>
+                                <button type="button" class="btn btn-bold btn-primary" data-dismiss="modal">Siguiente</button>
+                              </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
+                        <div class="modal modal-center fade" id="modal-center2" tabindex="-1" style="display: none;" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Mermar Lote</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p style="text-align: center; font-size: 150%">¿Está seguro que quiere mermar esta vaca?</p>
+                                <br><br><br><br><br><br>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-bold btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-bold btn-primary" data-dismiss="modal">Aceptar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
                       </td>
                     </tr>
                     <tr>
@@ -221,15 +335,13 @@
                       <td>750kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -241,15 +353,13 @@
                       <td>720kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -261,15 +371,13 @@
                       <td>790kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -281,15 +389,13 @@
                       <td>730kg</td>
                       <td>si</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -301,15 +407,13 @@
                       <td>700kg</td>
                       <td>Si</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -321,15 +425,13 @@
                       <td>710kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -341,15 +443,13 @@
                       <td>700kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -361,15 +461,13 @@
                       <td>810kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -381,15 +479,13 @@
                       <td>750kg</td>
                       <td>Si</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -401,15 +497,13 @@
                       <td>710kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -421,15 +515,13 @@
                       <td>880kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     <tr>
@@ -441,15 +533,13 @@
                       <td>790kg</td>
                       <td>No</td>
                       <td>
-                        <a href="enfermeria.html" class="table-action hover-primary">
-                          <i class="fa fa-heartbeat" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
-                        </a>
+                        <i type="button" class="fa fa-heartbeat hover-primary" data-toggle="modal" data-target="#modal-center" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
+
                         <a href="expediente.html" class="table-action hover-primary">
                           <i class="fa fa-file-pdf-o" style="font-size: 25px;">&nbsp;&nbsp;&nbsp;</i>
                         </a>
-                        <a href="adyuvantes.html" class="table-action hover-danger">
-                          <i class="fa fa-remove" style="font-size: 25px;"></i>
-                        </a>
+                        
+                        <i type="button" class="fa fa-remove hover-danger" data-toggle="modal" data-target="#modal-center2" style="font-size: 25px; cursor: pointer;">&nbsp;&nbsp;&nbsp;</i>
                       </td>
                     </tr>
                     
