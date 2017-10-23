@@ -11,7 +11,9 @@
  	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 </head>
 <body>
-	<div id="myfirstchart" ></div>
+	<div id="myfirstchart" data-provide="morris" style="position: relative; -webkit-tap-highlight-color: rgba(0,0,0,0);">
+		<svg heigth="350" version="1.1" width="347"></svg>
+	</div>
 	<script>
 		new Morris.Line({
 		  // ID of the element in which to draw the chart.
