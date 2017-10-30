@@ -19,6 +19,9 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="icon" href="assets/img/favicon.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
   </head>
 
   <body>
@@ -39,7 +42,7 @@
         <a class="logo-icon" href="#"><img src="assets/img/bayer-logo.png" alt="logo icon"></a>
         <span class="logo">
           <!--<a href="#"><img src="assets/img/logo-light-bayer.png" alt="logo"></a>-->
-		Bayer
+    Bayer
         </span>
         <span class="sidebar-toggle-fold"></span>
       </header>
@@ -97,13 +100,29 @@
     </aside>
     <!-- END Sidebar -->
 
+  <main class="main-container">
+    <div class="main-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div id="myfirstchart" data-provide="morris" style="position: relative; -webkit-tap-highlight-color: rgba(0,0,0,0);">
+                <svg heigth="350" version="1.1" width="347"></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
     <!-- Topbar -->
     <header class="topbar topbar-inverse bg-info">
       <div class="topbar-left">
         <span class="topbar-btn sidebar-toggler"><i>&#9776;</i></span>
-	<span class="sidebar-toggler"><img src="assets/img/logoTop.png" alt="logoTop"></span>
-	&nbsp;&nbsp;&nbsp;
-	<span class="sidebar-toggler">Bayer</span>
+  <span class="sidebar-toggler"><img src="assets/img/logoTop.png" alt="logoTop"></span>
+  &nbsp;&nbsp;&nbsp;
+  <span class="sidebar-toggler">Bayer</span>
       </div>
 
       <div class="topbar-right">
@@ -221,6 +240,30 @@
       $(document).ready(function() {
       });
     </script>
+
+    <script>
+    new Morris.Line({
+      // ID of the element in which to draw the chart.
+      element: 'myfirstchart',
+      // Chart data records -- each entry in this array corresponds to a point on
+      // the chart.
+      data: [
+        { year: '2008', value: 20 },
+        { year: '2009', value: 10 },
+        { year: '2010', value: 5 },
+        { year: '2011', value: 5 },
+        { year: '2012', value: 20 }
+      ],
+      // The name of the data record attribute that contains x-values.
+      xkey: 'year',
+      // A list of names of data record attributes that contain y-values.
+      ykeys: ['value'],
+      // Labels for the ykeys -- will be displayed when you hover over the
+      // chart.
+      labels: ['Value']
+      resize: true;
+    });
+  </script>
 
   </body>
 </html>
