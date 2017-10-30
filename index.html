@@ -201,11 +201,19 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="card">
               <hr>
               <div class="card-body">
                 <div id="donut-example" style="height: 250px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <hr>
+              <div class="card-body">
+                <div id="donut-example1" style="height: 250px;"></div>
               </div>
             </div>
           </div>
@@ -321,6 +329,30 @@
   <script>
    Morris.Donut({
   element: 'donut-example',
+  data: [
+    {label: " Vacas en Enfermería", value: 120},
+    {label: "Vacas Sanas", value: 3000}
+  ],
+  colors:["#ff6666", "#99e699"]
+});
+  </script>
+  <script>
+   Morris.Donut({
+  element: 'donut-example1',
+  data: [
+    {label: "RanchoEngorda", value: 562},
+    {label: "RegioENgora", value: 365},
+    {label: "Rancho X", value: 421},
+    {label: "Rancho Y", value: 521},
+    {label: "Rancho Z", value: 481},
+    {label: "Rancho W", value: 485},
+  ],
+  colors:["#ff6666", "#99e699"]
+});
+  </script>
+  <script>
+   Morris.Donut({
+  element: 'donut-example2',
   data: [
     {label: " Vacas en Enfermería", value: 120},
     {label: "Vacas Sanas", value: 3000}
